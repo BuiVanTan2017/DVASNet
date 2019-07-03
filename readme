@@ -1,1 +1,12 @@
 Antonyms-Synonyms Discrimination Based On Exhaustive Exploiting Vietnamese Features
+
+we introduce a novel Vietnamese Dataset for the antonyms-synonyms distinction task (ViAS-1000 dataset). 
+Antonymous/synonymous pairs are manually selected from Vietnamese WordNet (Phuong-Thai Nguyen, 2015) and VCL (Huyên et al., 2006). Firstly, We extracted all antonymous and synonymous pairs according to the three part-of-speech
+categories: noun, verb and adjective. Thereafter, 400 antonymous pairs and 600 synonym pairs are carefully selected with respect to a number of constraints:
+•Two words of a pair necessarily have jointly a POS.
+• The number of pairs should correspond to the natural ratio according to the part-of-speech. In
+Vietnamese, the popularity degree of antonymy and synonymy decreases in the order of adjective, verb, noun. Besides, synonyms are also much more
+popular than antonyms.
+• Antonymous/synonymous pairs cover sufficiently the circumstances of the relation of Vietnamese such as single/compound words, subordinating/coordinating words reduplicative-words,
+reverse-words.
+• Datasets should contain words in different domains (e.g. sport, emotion, vehicle,...).

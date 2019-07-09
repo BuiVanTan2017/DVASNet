@@ -1,12 +1,55 @@
 Antonyms-Synonyms Discrimination Based On Exhaustive Exploiting Vietnamese Features
 
+VIETNAMESE DATASET CONSTRUCTION
 we introduce a novel Vietnamese Dataset for the antonyms-synonyms distinction task (ViAS-1000 dataset). 
-Antonymous/synonymous pairs are manually selected from Vietnamese WordNet (Phuong-Thai Nguyen, 2015) and VCL (Huyên et al., 2006). Firstly, We extracted all antonymous and synonymous pairs according to the three part-of-speech
-categories: noun, verb and adjective. Thereafter, 400 antonymous pairs and 600 synonym pairs are carefully selected with respect to a number of constraints:
+Antonymous/synonymous pairs are manually selected from Vietnamese WordNet (Phuong-Thai Nguyen, 2015) 
+and VCL (Huyên et al., 2006). Firstly, We extracted all antonymous and synonymous pairs according 
+to the three part-of-speech categories: noun, verb and adjective. Thereafter, 400 antonymous pairs
+and 600 synonym pairs are carefully selected with respect to a number of constraints:
 •Two words of a pair necessarily have jointly a POS.
 • The number of pairs should correspond to the natural ratio according to the part-of-speech. In
-Vietnamese, the popularity degree of antonymy and synonymy decreases in the order of adjective, verb, noun. Besides, synonyms are also much more
-popular than antonyms.
-• Antonymous/synonymous pairs cover sufficiently the circumstances of the relation of Vietnamese such as single/compound words, subordinating/coordinating words reduplicative-words,
+Vietnamese, the popularity degree of antonymy and synonymy decreases in the order of adjective, verb, noun.
+Besides, synonyms are also much more popular than antonyms.
+• Antonymous/synonymous pairs cover sufficiently the circumstances of the relation of Vietnamese such as 
+single/compound words, subordinating/coordinating words reduplicative-words,
 reverse-words.
 • Datasets should contain words in different domains (e.g. sport, emotion, vehicle,...).
+
+A. Selecting Antonymous Word Pairs
+Antonymous word pairs are chosen to cover diverse circumstances of the relations as follows:
+• Adjective pairs opposite meaning according to the scale: béo-gầy<fat-thin>, cao-thấp<high-low>,
+cứng-mềm<hard-soft>,...
+• Adjective pairs opposite meaning according to the negation: căng-chùng<stretchy-slack>, chẵnlẻ<even-odd>,
+kín-hở<close-open>,...
+Verb pairs opposite meaning according to the negation: cho-nhận<give-receive>, bán-mua<sell-buy>,
+bật-tắt<turn on - turn off>,...
+• Single syllable antonymous word pairs: bố-mẹ<dad-mum>, chồng-vợ<husband-wife>, ngày- đêm<daytime - night time>,...
+• Multi-syllable instance noun pairs opposite
+meaning: bạn_bè-kẻ_thù<buddy-enemy>, giáo_viên-học_sinh<teacher-student>, tổ_tiêncon_cháu<ancestor-progeny>,...
+• Multi-syllable abstract noun pairs opposite
+meaning: bản_chất - hiện_tượng<essencephenomena>, lý_thuyết - thực_hành<theoreticalpractical>, 
+ưu_điểm - khuyết_điểm<advantagesdisadvantages>,...
+• Subordinate compound adjective pairs opposite meaning:cẩn_thận - cẩu_thả<careful-careless>,
+khiêm_tốn - kiêu_ngạo<modest-arrogant>, khổng_lồ - tí_hon<giant-tiny>,...
+• Coordinated compound reduplicative-adjective pairs opposite meaning: im_lặng - ồn_ào<tranquilnoisy>, 
+tốt_đẹp - xấu_xa<good hearted-malevolent>, mạnh_mẽ - yếu_đuối<strong-weak>,...
+• Subordinate compound verb pairs opposite meaning: xây_dựng - phá_hoại<constructiondestruction>,
+đồng_ý - phản_đối<agree-oppose>, khen_ngợi - chê_bai<congratulate-decry>,..
+
+B. Selecting Synonymous Word Pairs
+Synonymous word pairs are chosen to cover diverse circumstances of the relations as follows:
+• Single-syllable synonym adjective pairs: bé-nhỏ<small-tiny>, giỏi-tài<gift -talent>, xinh-
+đẹp<pretty-beautiful>.
+• Multi-syllable synonym adjective pairs: cần_cù-chịu_khó<industrious-painstaking>, chân_thật - chân_thực<honest-truthful>, dễ_chịukhoan_khoái<comfortable-agreeable>.
+• Synonym adjective pairs consist of a single-syllable word and a reduplicative multi-syllable word:
+(ác-ác_độc)<evil-wicked>, buồn-buồn_phiền<sadunhappy>, đẹp- xinh_đẹp<pretty-beautiful>.
+• Single-syllable synonym noun pairs: mẹ- má<mother-mom>, bã-cặn<dregs-sediment>, nam-nồm<south-south>.
+• Synonym noun pairs consist of a single-syllable word and a reduplicative multi-syllable word:
+ảnhchân_dung<photo-portrait>, đất-đất_đai<realtyreal estate>, chồng-phu_quân<husband-husband>.
+• Synonym verb pairs consist of a single-syllable word and reduplicative multi-syllable word: 
+đánh-đánh_đập<hit-beat>, giết-tiêu_diệt<killextirpate>, dùng-sử_dụng<use-employ
+
+The number of pairs according to the relations and POS as follows:
+         #Adjective   #Verb  #Noun     Total
+Antonyms 250          90    60        400
+Synonyms 250          200   150       600
